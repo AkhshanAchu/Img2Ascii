@@ -57,7 +57,8 @@ gcc -o img2ascii img2ascii.c
 ```
 Make sure your image.bmp is in the same folder as the program.
 
-###🧪 Known Limitations
+---
+### 🧪 Known Limitations
 -Only works with BMP images (no support for JPG, PNG, etc.)
 -No resizing or dithering applied to maintain image integrity
 -Output quality may degrade for high-resolution images
