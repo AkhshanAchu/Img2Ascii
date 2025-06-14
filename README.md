@@ -1,8 +1,8 @@
-# 🖼️ Image to ASCII Converter in C
+# Image to ASCII Converter in C
 
 This project is a simple image-to-ASCII converter written in C. It reads a BMP image file (24-bit Bitmap format) and converts its pixel intensities into ASCII characters to generate a textual representation of the image. Additionally, it generates a grayscale `.pgm` image output.
 
-## 🚀 Features
+## Features
 
 - Supports **24-bit BMP images only** (preserves raw pixel data).
 - Converts color pixel intensities to grayscale.
@@ -13,7 +13,7 @@ This project is a simple image-to-ASCII converter written in C. It reads a BMP i
 
 ---
 
-## 📁 Input Format
+## Input Format
 
 > The image **must be in `.bmp` format** with 24-bit depth. This ensures the pixel data is preserved without compression.
 
@@ -21,7 +21,7 @@ The code currently reads from a file named `einstein.bmp`. Make sure to place yo
 
 ---
 
-## 📦 Output Files
+## Output Files
 
 - `pic1.txt` → ASCII art output.
 - `pgmimg2.pgm` → Grayscale `.pgm` image representation.
@@ -29,14 +29,14 @@ The code currently reads from a file named `einstein.bmp`. Make sure to place yo
 
 ---
 
-## 🛠️ Dependencies
+## Dependencies
 
 - Standard C compiler (`gcc` or any other)
 - No external libraries required
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
 1. **Reads BMP Header**: Extracts image metadata like width, height, bit count, and pixel offset.
 2. **Processes Pixels**: Reads raw RGB pixel data and calculates perceived intensity using the formula:
@@ -46,19 +46,19 @@ The code currently reads from a file named `einstein.bmp`. Make sure to place yo
 
 ---
 
-### 🔨 Compile the Code
+### Compile the Code
 
 ```bash
 gcc -o img2ascii img2ascii.c
 ```
-### ▶️ Run the Program
+### Run the Program
 ```bash
 ./img2ascii
 ```
 Make sure your image.bmp is in the same folder as the program.
 
 ---
-### 🧪 Known Limitations
+### Known Limitations
 -Only works with BMP images (no support for JPG, PNG, etc.)
 -No resizing or dithering applied to maintain image integrity
 -Output quality may degrade for high-resolution images
